@@ -1,0 +1,32 @@
+{
+  "frontend": {
+    "oidc": {
+      "authority": "FRONTEND_INNKEEPER_OIDC_AUTHORITY",
+      "client": "FRONTEND_INNKEEPER_OIDC_CLIENT",
+      "label": "FRONTEND_INNKEEPER_OIDC_LABEL"
+    },
+    "session": {
+      "countdownSeconds": "FRONTEND_SESSION_COUNTDOWN_SECONDS",
+      "timeoutSeconds": "FRONTEND_SESSION_TIMEOUT_SECONDS"
+    },
+    "ux": {
+      "appTitle": "UX_APP_TITLE",
+      "infoBanner": {
+        "message": "UX_INFO_BANNER_MESSAGE",
+        "messageLevel": "UX_INFO_BANNER_MESSAGE_LEVEL",
+        "showMessage": "UX_INFO_BANNER_SHOW_MESSAGE"
+      }
+    }
+  },
+  "server": {
+    "apiPath": "SERVER_API_PATH",
+    "logLevel": "SERVER_LOG_LEVEL",
+    "oidc": {
+      "jwksUri": "SERVER_OIDC_JWKS",
+      "realm": "SERVER_OIDC_REALM",
+      "roleName": "SERVER_OIDC_ROLE"
+    },
+    "port": "SERVER_PORT",
+    "tractionUrl": "SERVER_TRACTION_URL"
+  }
+}

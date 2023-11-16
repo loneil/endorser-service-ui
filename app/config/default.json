@@ -1,0 +1,32 @@
+{
+  "frontend": {
+    "oidc": {
+      "authority": "https://dev.loginproxy.gov.bc.ca/auth/realms/digitaltrust-nrm",
+      "client": "innkeeper-frontend",
+      "label": "IDIR"
+    },
+    "session": {
+      "countdownSeconds": "30",
+      "timeoutSeconds": "600"
+    },
+    "ux": {
+      "appTitle": "Endorser Service",
+      "infoBanner": {
+        "message": "",
+        "messageLevel": "info",
+        "showMessage": false
+      }
+    }
+  },
+  "server": {
+    "apiPath": "/api",
+    "logLevel": "http",
+    "oidc": {
+      "jwksUri": "https://dev.loginproxy.gov.bc.ca/auth/realms/digitaltrust-nrm/protocol/openid-connect/certs",
+      "realm": "digitaltrust-nrm",
+      "roleName": "innkeeper"
+    },
+    "port": "8080",
+    "tractionUrl": "http://localhost:5100"
+  }
+}
